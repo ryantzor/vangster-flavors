@@ -8,5 +8,8 @@
     "run:server": "cd server && yarn && yarn start"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react-toast-notifications": "^2.2.1"
+  }
 }

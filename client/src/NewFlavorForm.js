@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Dropdown, Input, Button } from 'semantic-ui-react'
+import { Dropdown, Icon, Input, Button } from 'semantic-ui-react'
 
 const StyledInput = styled(Input)`
   padding: 0px 16px;
@@ -26,10 +26,13 @@ const options = [
 ]
 
 const NewFlavorForm = ({ onClick }) => {
-  const [ name, setName ] = React.useState('');
+  const [ name, setName] = React.useState('');
   const [ tags, setTags ] = React.useState([]);
 
   const submitForm = () => {
+    if (!name) {
+      return;
+    }
     onClick({name, tags});
     setName('');
     setTags([]);
@@ -40,18 +43,25 @@ const NewFlavorForm = ({ onClick }) => {
       <StyledInput
         placeholder="Name"
         value={name}
+        required
         onChange={(event, {value}) => setName(value)}
       />
       <Dropdown 
         multiple
         selection
         search
+        required
         onChange={(event, {value}) => setTags(value)}
         options={options}
         value={tags}
         placeholder="Tags"
       />
-      <StyledButton onClick={submitForm} primary>Add</StyledButton>
+      <StyledButton animated="fade" onClick={submitForm} primary>
+        <Button.Content visible>Add</Button.Content>
+        <Button.Content hidden>
+          <Icon name='plus' />
+        </Button.Content>
+      </StyledButton>
     </React.Fragment>
   )
 

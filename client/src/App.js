@@ -4,13 +4,20 @@ import styled from 'styled-components';
 import axios from 'axios';
 import NewFlavorForm from './NewFlavorForm';
 import FlavorsList from './FlavorsList';
+import Background from './icecream.png';
 
 const Wrapper = styled.div`
   padding: 32px;
 `
+const backgroundStyle = {
+  height: "100vh",
+  backgroundImage: `url(${Background})`, 
+}
 
 function App() {
   const [ flavors, setFlavors ] = React.useState([]);
+  // creating new variable to display only the filtered list.
+  // const [ flavorsFiltered, setFlavorsFiltered ] = React.useState([]);
 
   React.useEffect(() => {
     const fetchFlavors = async () => {
@@ -50,14 +57,30 @@ function App() {
 
     setFlavors(prev => prev.map(flavor => flavor.id === id ? data : flavor))
   }
+
+  const deleteFlavor = async ({ id, value }) => {
+    const { data } = await axios('/flavors:id', {
+      method: 'DELETE',
+      data: {
+        id
+      },
+      headers:{
+        'Content-Type': 'application/json'
+      }
+    }).catch(err => ({ err }));
+
+    setFlavors(prev => prev.map(flavor => flavor.id === id ? data : flavor))
+  }
   
   return (
-    <Wrapper className="App">
+    <Wrapper className="App"  style={ backgroundStyle }>
       <center>
         <NewFlavorForm onClick={addNewFlavor}/>
         <FlavorsList 
+          // flavorsFiltered={flavorsFiltered}
           flavors={flavors} 
           onRatingSelect={updateFlavorRating}
+          onDeleteClick={deleteFlavor}
         />
       </center>
     </Wrapper>
