@@ -15,7 +15,7 @@ const filterbyId = (idToFilter) => ({ id }) => {
 
 const create = ({ name, tags }) => {
   nextId++;
-  return _flavors.insert({ id: nextId, name, tags });
+  return _flavors.insert({ id: nextId, name, tags, rating: 0 });
 }
 
 const update = (newFlavor) => {

@@ -43,13 +43,14 @@ const FlavorList = ({ flavors, onRatingSelect, onDeleteClick }) => {
   var flavorsFiltered = flavors.filter(
     (flavor) => {
       return flavor.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
+      && flavor.rating >= rating
       && flavor.tags.join().toLowerCase().indexOf(tags.join()) !== -1;
     }
   );
 
   const clearFilters = () => {
     setTags([]);
-    setRating('');
+    setRating(0);
     setSearch('');
   }
 
