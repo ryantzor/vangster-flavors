@@ -1,3 +1,18 @@
+# What's new!
+Here are some updates:
+__Functionality__: All requirements are met: searchable, filter by: tag, rating, and clear the filter.
+__Bonus Features__: Adding styling to buttons with animations, and new background. 
+
+# Todo
+__Bonus Features__: I am going to continue working on this project this weekend. I am going to get the 'remove button' working as well as the 'like' button; that way you can remove and favorite your flavors. Lastly, I think it would be really cool to show actual stars for the rating instead of only numbers.
+
+__Cleanup__: Abstract the filter list to it's own react component.
+__Cleanup__: Clean up any messy code, I apologize I haven't used react recently so I'm ramping myself up on it as I go.
+
+Thanks!
+Ryan
+
+
 # Full Stack Developer Assignment
 Part of the interview process with Vangst requires you to complete this take home assignment.
 There are two parts to this assignment, a full stack application, and an API/Data model design document. This repository is a starter for the full stack application.
@@ -5,7 +20,7 @@ There are two parts to this assignment, a full stack application, and an API/Dat
 ## Using this project
 
 ### Frontend - React
-The frontend React code can be found in the `/client` folder. The frontend was created using create-react-app and can be started by running the following command in the root folder of th project.
+The frontend React code can be found in the `/client` folder. The frontend was created using create-react-app and can be started by running the following command in the root folder of the project.
 ``` bash 
 yarn run:client 
 ```

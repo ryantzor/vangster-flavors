@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 const backgroundStyle = {
   height: "100vh",
   backgroundImage: `url(${Background})`, 
-}
+} 
 
 function App() {
   const [ flavors, setFlavors ] = React.useState([]);
@@ -75,7 +75,7 @@ function App() {
   return (
     <Wrapper className="App"  style={ backgroundStyle }>
       <center>
-        <NewFlavorForm onClick={addNewFlavor}/>
+      <NewFlavorForm onClick={addNewFlavor}/>
         <FlavorsList 
           // flavorsFiltered={flavorsFiltered}
           flavors={flavors} 

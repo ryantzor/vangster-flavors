@@ -30,7 +30,8 @@ const FlavorListItem = ({ id, name, tags, rating, onRatingSelect, onDeleteClick}
         />
       </Table.Cell>
       <Table.Cell style={ removeStyle }>
-      <i aria-hidden="true" className="close disabled icon" onClick={(event, {id}) => onDeleteClick(id)}></i>
+      {/* <i aria-hidden="true" className="close disabled icon" onClick={(event, {id}) => onDeleteClick(id)}></i> */}
+      <i aria-hidden="true" className="close disabled icon"></i>
       <i aria-hidden="true" className="heart disabled icon"></i>
       </Table.Cell>
     </Table.Row>
