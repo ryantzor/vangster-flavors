@@ -4,10 +4,10 @@ __Functionality__: All requirements are met: searchable, filter by: tag, rating,
 __Bonus Features__: Adding styling to buttons with animations, and new background. 
 
 # Todo
-__Bonus Features__: I am going to continue working on this project this weekend. I am going to get the 'remove button' working as well as the 'like' button; that way you can remove and favorite your flavors. Lastly, I think it would be really cool to show actual stars for the rating instead of only numbers. 
+__Bonus Features__: I am going to continue working on this project this weekend. I am going to get the 'remove button' working as well as the 'like' button; that way you can remove and favorite your flavors. Lastly, I think it would be really cool to show actual stars for the rating instead of only numbers 
 
-__Cleanup__: Abstract the filter list to it's own react component. 
-__Cleanup__: Clean up any messy code, I apologize I haven't used react recently so I'm ramping myself up on it as I go. 
+__Cleanup__: Abstract the filter list to it's own react component 
+__Cleanup__: Clean up any messy code, I apologize I haven't used react recently so I'm ramping myself up on it as I go 
 
 Thanks!
 Ryan
