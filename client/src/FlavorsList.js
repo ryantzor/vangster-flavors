@@ -38,15 +38,12 @@ const FlavorList = ({ flavors, onRatingSelect, onDeleteClick }) => {
   
   const [search, setSearch] = React.useState('');
   const [tags, setTags ] = React.useState([]);
-  const [rating, setRating] = React.useState('');
+  const [rating, setRating] = React.useState('0');
 
   var flavorsFiltered = flavors.filter(
     (flavor) => {
-      console.log(flavor.tags.join());
-      console.log(tags.join());
-      return flavor.name.toLowerCase().indexOf(search.toLowerCase()) !== -1 
-      && flavor.rating >= rating 
-      && flavor.tags.join().toLowerCase().indexOf(tags.join().toLowerCase()) !== -1;
+      return flavor.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
+      && flavor.tags.join().toLowerCase().indexOf(tags.join()) !== -1;
     }
   );
 
