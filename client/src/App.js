@@ -76,8 +76,7 @@ function App() {
     <Wrapper className="App"  style={ backgroundStyle }>
       <center>
       <NewFlavorForm onClick={addNewFlavor}/>
-        <FlavorsList 
-          // flavorsFiltered={flavorsFiltered}
+        <FlavorsList
           flavors={flavors} 
           onRatingSelect={updateFlavorRating}
           onDeleteClick={deleteFlavor}
