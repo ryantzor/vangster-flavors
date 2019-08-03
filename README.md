@@ -1,5 +1,4 @@
-# What's new! 
-Here are some updates: 
+# What's new!  
 __Functionality__: All requirements are met: searchable, filter by: tag, rating, and clear the filter. <br />
 __Bonus Features__: Adding styling to buttons with animations, and new background. <br />
 
