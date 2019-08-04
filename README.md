@@ -5,6 +5,7 @@ $ npm install
 ```
 __Functionality__: All requirements are met: searchable, filter by: tag, rating, and clear the filter. <br />
 __Bonus Features__: Adding styling to buttons with animations, and new background. <br />
+__Bonus Features__: Adding gitflow model for version control: initialized a develop branch, and all new development will be merged from branches 'feature/some-feature' into 'develop'<br />
 
 # Todo
  
