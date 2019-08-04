@@ -1,4 +1,8 @@
 # What's new!  
+```bash
+please run this before starting:
+$ npm install
+```
 __Functionality__: All requirements are met: searchable, filter by: tag, rating, and clear the filter. <br />
 __Bonus Features__: Adding styling to buttons with animations, and new background. <br />
 
