@@ -5,7 +5,7 @@ $ npm install
 ```
 __Functionality__: All requirements are met: searchable, filter by: tag, rating, and clear the filter. <br />
 __Bonus Features__: + styling to buttons with animations, and new background. <br />
-__Bonus Features__: + stars are now shown instead of numbers. These are clickable and it will update the rating on click.<br />
+__Bonus Features__: + stars are now shown for ratings instead of numbers. These are clickable and it will update the rating on click.<br />
 __Bonus Features__: + gitflow model for version control: initialized a develop branch, and all new development will be merged from branches 'feature/some-feature' into 'develop'<br />
 
 # Todo
