@@ -42,7 +42,6 @@ const FlavorList = ({ flavors, onRatingSelect, onDeleteClick }) => {
 
   const flavorsFiltered = flavors.filter(
     (flavor) => {
-      console.log(tags.join())
       return flavor.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
       && flavor.rating >= rating
       && flavor.tags.join().toLowerCase().indexOf(tags.join().toLowerCase()) !== -1
@@ -104,9 +103,7 @@ const FlavorList = ({ flavors, onRatingSelect, onDeleteClick }) => {
         {flavorsFiltered.map((flavor) => (
           <FlavorListItem 
           key={flavor.id} 
-          name={flavor.name}
-          tags={flavor.tags}
-          rating={flavor.rating}
+          {...flavor}
           onRatingSelect={(value) => onRatingSelect({ value, id: flavor.id })} 
           onDeleteClick={(value) => onDeleteClick({value, id: flavor.id})}
           />

@@ -58,7 +58,7 @@ function App() {
     setFlavors(prev => prev.map(flavor => flavor.id === id ? data : flavor))
   }
 
-  const deleteFlavor = async ({ id, value }) => {
+  const deleteFlavor = async ({ id }) => {
     const { data } = await axios('/flavors:id', {
       method: 'DELETE',
       data: {

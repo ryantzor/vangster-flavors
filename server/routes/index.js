@@ -20,6 +20,7 @@ router.put('/flavors', function(req, res) {
 });
 
 router.delete('flavors/:id', function(req, res) {
+  console.log(req);
   res.send(flavor.remove(req.params.id));
 });
 

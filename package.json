@@ -10,6 +10,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^4.3.1",
+    "react-star-rating-component": "^1.4.1",
     "react-toast-notifications": "^2.2.1"
   }
 }
